@@ -1,0 +1,16 @@
+const alinanMetin = prompt("Bir metin giriniz.");
+
+const kelimeler = alinanMetin.split(/\s+/);
+
+const sayac = [];
+
+
+for (let i = 0; i < kelimeler.length; i++) {
+  const kelime = kelimeler[i].toLowerCase(); 
+  if (kelime) { 
+    sayac[kelime] = (sayac[kelime] || 0) + 1; 
+  }
+}
+
+
+console.log("Kelime sayıları:", sayac);

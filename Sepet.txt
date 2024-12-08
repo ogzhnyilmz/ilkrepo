@@ -1,0 +1,8 @@
+let sepet = [];
+let urunSayisi = prompt("Sepetinize kaç adet ürün eklemek istiyorsunuz?");
+
+for (let index = 0; index < urunSayisi; index++) {
+    let alinanUrun = prompt(`${index + 1}. Hangi ürünleri sepetinize eklemek istiyorsunuz?`);
+    sepet.push(alinanUrun); 
+}
+    console.log(`Sepetinizde ${sepet.join(', ')} bulunmaktadır.`);

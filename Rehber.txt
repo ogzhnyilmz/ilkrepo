@@ -1,0 +1,75 @@
+let rehber = [
+    { ad: "Oğuzhan Yılmaz", numara: "553-153-4380" },
+    { ad: "Furkan Özay", numara: "537-857-1523" }
+];
+
+let secim = "";
+for (let i = 0; secim !== "4"; i++) {
+    secim = prompt(
+        "Telefon Rehberi\n" +
+        "1. Kişi Ekle\n" +
+        "2. Kişi Bul\n" +
+        "3. Kişi Sil\n" +
+        "4. Çıkış\n" +
+        "Yapmak İstediğiniz İşlemi Girin (1-4):"
+    );
+
+
+    if (secim === "1") {
+        let ad = prompt("Eklemek istediğiniz kişinin adını girin:");
+        let numara = prompt("Eklemek istediğiniz kişinin telefon numarasını girin:");
+
+        if (ad && numara) {
+            rehber.push({ ad: ad, numara: numara });
+            alert(ad + " başarıyla rehbere eklendi!");
+        } else {
+            alert("Lütfen hem ad hem de numara girin.");
+        }
+    }
+
+
+    else if (secim === "2") {
+        let arananAd = prompt("Aramak istediğiniz kişinin adını girin:");
+        let kisi = null;
+
+        for (let i = 0; i < rehber.length; i++) {
+            if (rehber[i].ad.toLowerCase().trim() === arananAd.toLowerCase().trim()) {
+                kisi = rehber[i];
+                break;
+            }
+        }
+
+        if (kisi) {
+            alert("Ad: " + kisi.ad + "\nNumara: " + kisi.numara);
+        } else {
+            alert("Kişi bulunamadı.");
+        }
+    }
+
+    else if (secim === "3") {
+        let silinenAd = prompt("Silmek istediğiniz kişinin adını girin:");
+        let index = -1;
+
+        for (let i = 0; i < rehber.length; i++) {
+            if (rehber[i].ad.toLowerCase() === silinenAd.toLowerCase()) {
+                index = i;
+                break;
+            }
+        }
+
+        if (index !== -1) {
+            let silinenKisi = rehber.splice(index, 1);
+            alert(silinenKisi[0].ad + " başarıyla silindi!");
+        } else {
+            alert("Kişi bulunamadı.");
+        }
+    }
+
+    else if (secim === "4") {
+        alert("Çıkış yapılıyor...");
+    }
+
+    else {
+        alert("Geçersiz seçim, lütfen 1-4 arasında bir seçim yapın.");
+    }
+}

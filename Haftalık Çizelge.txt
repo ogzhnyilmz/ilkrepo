@@ -1,0 +1,16 @@
+const cizelge = [];
+
+const gunler = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"];
+
+
+for (let i = 0; i < gunler.length; i++) {
+  const gun = gunler[i];
+  const aktivite = prompt(`${gun} için yapmak istediğiniz aktivite nedir?`); 
+  cizelge.push({ gun: gun, aktivite: aktivite });
+}
+
+
+console.log("Haftalık Aktivite Çizelgesi:");
+for (let i = 0; i < cizelge.length; i++) {
+  console.log(`${cizelge[i].gun}: ${cizelge[i].aktivite}`);
+}

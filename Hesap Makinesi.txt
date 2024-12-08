@@ -1,0 +1,28 @@
+const sayi1 = prompt("Bir sayı girin.");
+
+const sayi2 = prompt("Bir sayı girin.");
+
+const islem = prompt("Yapmak istediğiniz işlem nedir?(+,-,*,/)");
+
+
+let sonuc;
+
+if (islem === "+") {
+    sonuc = sayi1 * 1 + sayi2 * 1; 
+    alert(`Sonuç: ${sonuc}`);
+} else if (islem === "-") {
+    sonuc = sayi1 - sayi2;
+    alert(`Sonuç: ${sonuc}`);
+} else if (islem === "*") {
+    sonuc = sayi1 * sayi2;
+    alert(`Sonuç: ${sonuc}`);
+} else if (islem === "/") {
+    if (sayi2 * 1 !== 0) { 
+        sonuc = sayi1 / sayi2;
+        alert(`Sonuç: ${sonuc}`);
+    } else {
+        alert("Geçersiz işlem girdiniz!");
+    }
+} else {
+    alert("Geçersiz işlem girdiniz!");
+}

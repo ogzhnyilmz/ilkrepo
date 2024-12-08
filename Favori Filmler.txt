@@ -1,0 +1,7 @@
+const filmler = prompt("Favori filmleriniz nelerdir?");
+
+let favoriFilmler = filmler.split(",");
+
+favoriFilmler.sort();
+
+console.log(favoriFilmler);

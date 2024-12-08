@@ -1,0 +1,27 @@
+const sorular = [
+  {
+    soru: "En sevdiğiniz yemek nedir?",
+    secenekler: ["Pizza", "Hamburger", "Kebap"]
+  },
+  {
+    soru: "Hangi spor türlerini seversiniz?",
+    secenekler: ["Kayak", "Tenis", "Voleybol", ]
+  },
+  {
+    soru: "En sevdiğiniz tatlı nedir?",
+    secenekler: ["Magnolya", "Tiramisu", "Baklava"]
+  }
+];
+
+
+let cevaplar = {};
+
+for (let i = 0; i < sorular.length; i++) {
+  const soruSorma = sorular[i];
+  const cevap = prompt(`${soruSorma.soru}\nSeçenekler: ${soruSorma.secenekler.join(', ')}`);
+
+  cevaplar[`soru${i + 1}`] = cevap;
+}
+
+
+console.log(cevaplar);

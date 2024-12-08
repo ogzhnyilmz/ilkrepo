@@ -1,0 +1,23 @@
+let alinanSayilar = [];
+for (let i = 0; i < 10; i++) {
+    let sayi = prompt(`Lütfen ${i + 1}. sayıyı girin:`); 
+    alinanSayilar.push(+sayi); 
+}
+
+let ciftSayilar = [];
+let tekSayilar = [];
+
+
+
+for (let i = 0; i < alinanSayilar.length; i++) {
+    if (alinanSayilar[i] % 2 === 0) {
+        ciftSayilar.push(alinanSayilar[i]); 
+    } else {
+        tekSayilar.push(alinanSayilar[i]); 
+    }
+    
+}
+
+
+console.log("Çift Sayılar: ", ciftSayilar);
+console.log("Tek Sayılar: ", tekSayilar);
