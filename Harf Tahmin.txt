@@ -1,0 +1,29 @@
+const kelime = "bilgisayar";
+const gizliKelime = Array(kelime.length).fill("_");
+
+alert("Kelime: " + gizliKelime.join(" "));
+
+while (gizliKelime.includes("_")) {
+    const tahmin = prompt("Bir harf tahmin edin:").toLowerCase();
+
+    if (tahmin.length !== 1) {
+        continue;
+    }
+
+    let dogruTahmin = false;
+
+    for (let i = 0; i < kelime.length; i++) {
+        if (kelime[i] === tahmin && gizliKelime[i] === "_") {
+            gizliKelime[i] = tahmin;
+            dogruTahmin = true;
+        }
+    }
+
+    if (dogruTahmin) {
+        alert(`Doğru tahmin! Kelime: ${gizliKelime.join(" ")}`);
+    } else {
+        alert(`Yanlış tahmin! Kelime: ${gizliKelime.join(" ")}`);
+    }
+}
+
+alert("Tebrikler! Kelimeyi buldunuz: " + kelime);
