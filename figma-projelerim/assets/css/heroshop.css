@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 1440px;
+    height: 1024px;
+    background-image: url('/assets/img/sdfsdf.png');
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.text1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 81px;
+    letter-spacing: -0.8999999761581421px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    position: relative;
+    top: 354px;
+
+}
+
+.text2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: -0.3499999940395355px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    position: relative;
+    top: 370px;
+
+
+}
+
+.button {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 600px;
+    line-height: 500px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #094BAC;
+    padding: 16px 72px;
+    border-radius: 40px;
+    position: relative;
+    top: 200px;
+    left: 560px;
+}

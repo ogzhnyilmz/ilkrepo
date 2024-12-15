@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 1024px;
+    background-color: #b62020;
+    background-image: url('/assets/img/Imdsfsdfdsage.png');
+    background-repeat: no-repeat;
+    background-position: 540px;
+    margin: auto;
+
+}
+
+.text {
+    color: white;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 127px;
+    letter-spacing: -1.5750000476837158px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 250px;
+    padding-top: 150px;
+
+}
+
+.h5 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 250px;
+    padding-top: 35px;
+}
+
+.button {
+    padding-left: 250px;
+    padding-top: 35px;
+}
+
+.price {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 380px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+.border {
+    position: relative;
+    bottom: 150px;
+    left: 250px;
+}
+
+.delivery {
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+}
